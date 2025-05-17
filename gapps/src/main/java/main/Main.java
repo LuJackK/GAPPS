@@ -13,12 +13,12 @@ public class Main {
         DefaultPlant basePlant = new DefaultPlant();
 
         Plant testPlant=new Plant(
-                basePlant.getPlant_height()+basePlant.getPlant_height()*0.1,
-                basePlant.getNumber_of_pods()+basePlant.getNumber_of_pods()*0.1,
-                basePlant.getBiological_weight()+basePlant.getBiological_weight()*0.1,
-                basePlant.getSugar()+basePlant.getSugar()*0.1,
-                basePlant.getRelative_water()+basePlant.getRelative_water()*0.1,
-                basePlant.getChlorophyllA()+basePlant.getChlorophyllA()*0.1,
+                basePlant.getPlant_height()*1.1,
+                basePlant.getNumber_of_pods()*1.1,
+                basePlant.getBiological_weight()*1.1,
+                basePlant.getSugar()*1.1,
+                basePlant.getRelative_water()*1.1,
+                basePlant.getChlorophyllA()*1.1,
                 basePlant.getChlorophyllB()+basePlant.getChlorophyllB()*0.1,
                 basePlant.getProtein_percentage()+basePlant.getProtein_percentage()*0.1,
                 basePlant.getLeaf_area_index()+basePlant.getLeaf_area_index()*0.1,
@@ -35,7 +35,7 @@ public class Main {
                 18.7           // solar radiation in MJ/m²
         ));
 
-        System.out.println("Final rating from temperature alone: "+ testPlant.getRanking());
+        System.out.println("Final rating from temperature and humidty alone: "+ testPlant.getRanking());
         //Table table = Table.create("Test Table");
         //System.out.println(table.structure());
     }
