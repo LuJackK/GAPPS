@@ -3,7 +3,7 @@ package plant;
 import tech.tablesaw.api.Table;
 
 
-public class defaultPlant {
+public class DefaultPlant {
 
 
     //Table data= Table.read().csv("/Users/al/GAPPS/gapps/dataSets/Advanced Soybean Agricultural Dataset.csv");
@@ -69,7 +69,7 @@ public class defaultPlant {
 
 
 
-    public defaultPlant() {
+    public DefaultPlant() {
         System.out.println("---------------------------------------------------------------");
         System.out.println("Plant height AVG        : "+plant_height);
         System.out.println("Number of pods AVG      : "+number_of_pods);
