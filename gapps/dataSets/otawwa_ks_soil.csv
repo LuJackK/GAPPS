@@ -1,0 +1,9 @@
+Feature,location,Soil_Grid,LAT,LON
+bdod_5-15cm_mean,ottawa_ks,153,38.5998,-95.2543
+cec_5-15cm_mean,ottawa_ks,229,38.5998,-95.2543
+clay_5-15cm_mean,ottawa_ks,319,38.5998,-95.2543
+nitrogen_5-15cm_mean,ottawa_ks,236,38.5998,-95.2543
+phh2o_5-15cm_mean,ottawa_ks,64,38.5998,-95.2543
+sand_5-15cm_mean,ottawa_ks,58,38.5998,-95.2543
+silt_5-15cm_mean,ottawa_ks,624,38.5998,-95.2543
+soc_5-15cm_mean,ottawa_ks,203,38.5998,-95.2543

@@ -6,7 +6,7 @@ import tech.tablesaw.api.Table;
 public class BasePlant {
 
 
-    Table data= Table.read().csv("../dataSets/Advanced Soybean Agricultural Dataset.csv");
+    Table data= Table.read().csv("../../dataSets/Advanced Soybean Agricultural Dataset.csv");
 
     private float plant_height;
     private float number_of_pods;
