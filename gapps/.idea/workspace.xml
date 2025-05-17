@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7b8055a-cbde-48ed-ae83-62c9c51af909" name="Changes" comment="" />
+
+    <list default="true" id="b7b8055a-cbde-48ed-ae83-62c9c51af909" name="Changes" comment="">
+
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
+      <change afterPath="$PROJECT_DIR$/src/main/java/playground/avgCalculations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/playground/WeatherDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/playground/WeatherDataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/playground/WeatherDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/playground/WeatherDay.java" afterDir="false" />
+
+    </list>
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +78,11 @@
       <updated>1747469716591</updated>
       <workItem from="1747469717855" duration="3225000" />
       <workItem from="1747480525814" duration="1282000" />
-      <workItem from="1747484380420" duration="8668000" />
+
+
+      <workItem from="1747489049962" duration="10961000" />
+      <workItem from="1747489049962" duration="7298000" />
+
     </task>
     <servers />
   </component>
