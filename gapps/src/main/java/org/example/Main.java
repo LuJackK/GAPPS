@@ -1,10 +1,14 @@
 package org.example;
+import plant.BasePlant;
 import tech.tablesaw.api.Table;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
+
+        BasePlant basePlant;
+
         Table table = Table.create("Test Table");
         System.out.println(table.structure());
     }
