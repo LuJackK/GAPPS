@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7b8055a-cbde-48ed-ae83-62c9c51af909" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="b7b8055a-cbde-48ed-ae83-62c9c51af909" name="Changes" comment="First Commit, working on trained Ai model as a fitness evaluator function.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/plant/dataPrep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/plant/defaultModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/plant/modelTrainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/plant/plant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/playground/AItrainingLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/playground/SampleData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/plant/BasePlant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/plant/defaultPlant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/plant/plantRanges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/plant/plantRanges.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/playground/Playground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/playground/Playground.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +38,9 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2xDPY26dx3i1ViUJqXPXtycRjmw" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -64,6 +72,7 @@
       <workItem from="1747469717855" duration="3225000" />
       <workItem from="1747480525814" duration="1282000" />
       <workItem from="1747484380420" duration="3527000" />
+      <workItem from="1747488614934" duration="17848000" />
     </task>
     <servers />
   </component>
@@ -80,5 +89,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Commit, working on trained Ai model as a fitness evaluator function." />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit, working on trained Ai model as a fitness evaluator function." />
   </component>
 </project>
