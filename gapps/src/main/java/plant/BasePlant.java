@@ -3,7 +3,7 @@ package plant;
 import tech.tablesaw.api.Table;
 
 
-public class BasePlant {
+public class BasePlant extends plantRanges{
 
 
     //Table data= Table.read().csv("/Users/al/GAPPS/gapps/dataSets/Advanced Soybean Agricultural Dataset.csv");
