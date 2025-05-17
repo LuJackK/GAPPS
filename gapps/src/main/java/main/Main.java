@@ -24,6 +24,10 @@ public class Main {
                 basePlant.getLeaf_area_index()+basePlant.getLeaf_area_index()*0.1,
                 basePlant.getSeed_yield_per_area()+basePlant.getSeed_yield_per_area()*0.1);
 
+
+
+
+
         Relations.rankingFunction(testPlant,new WeatherDay(
                 2024.5,        // year (e.g., mid-2024)
                 22.3,          // average temperature in °C
