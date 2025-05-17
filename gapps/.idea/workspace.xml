@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7b8055a-cbde-48ed-ae83-62c9c51af909" name="Changes" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/main/java/mess/Relations.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/plant/Plant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/plant/defaultPlant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/plant/defaultPlant.java" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/main/java/playground/avgCalculations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/playground/WeatherDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/playground/WeatherDataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/playground/WeatherDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/playground/WeatherDay.java" afterDir="false" />
+>>>>>>> 82d76f2fe40ab21e2beef2859397c81ab3e329b7
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +50,8 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/beege/GAPPS/gapps&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -51,6 +61,14 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,7 +79,13 @@
       <updated>1747469716591</updated>
       <workItem from="1747469717855" duration="3225000" />
       <workItem from="1747480525814" duration="1282000" />
+<<<<<<< HEAD
       <workItem from="1747484380420" duration="8668000" />
+=======
+      <workItem from="1747484380420" duration="3527000" />
+      <workItem from="1747488895177" duration="50000" />
+      <workItem from="1747489049962" duration="7298000" />
+>>>>>>> 82d76f2fe40ab21e2beef2859397c81ab3e329b7
     </task>
     <servers />
   </component>
