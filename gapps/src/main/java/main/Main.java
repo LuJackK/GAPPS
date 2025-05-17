@@ -1,46 +1,36 @@
 package main;
-import ai.djl.engine.Engine;
-import mess.Relations;
-import plant.DefaultPlant;
-import plant.Plant;
-import playground.WeatherDay;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import ai.djl.Model;
+import ai.djl.ndarray.NDManager;
+import ai.djl.training.dataset.Dataset;
+import plant.dataPrep;
+import plant.defaultModel;
+import plant.modelTrainer;
+import playground.AItrainingLoader;
+import playground.SampleData;
+
+import java.nio.file.Paths;
+import java.util.List;
+import plant.defaultModel;
+//package Main; izbacuje gresku pa sam komentirala
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+       /* AItrainingLoader loader = new AItrainingLoader();
+        List<SampleData> data = loader.loadData("dataSets/luka.csv");
+        dataPrep dp = new dataPrep();
+        try (NDManager manager = NDManager.newBaseManager()) {
+            Dataset dataset = dp.prepareData(manager, data);
 
-        DefaultPlant basePlant = new DefaultPlant();
+            defaultModel myModel = new defaultModel(14, 64, 2);
+            Model model = myModel.getModel();
 
-        Plant testPlant=new Plant(
-                basePlant.getPlant_height()*1.1,
-                basePlant.getNumber_of_pods()*1.1,
-                basePlant.getBiological_weight()*1.1,
-                basePlant.getSugar()*1.1,
-                basePlant.getRelative_water()*1.1,
-                basePlant.getChlorophyllA()*1.1,
-                basePlant.getChlorophyllB()+basePlant.getChlorophyllB()*0.1,
-                basePlant.getProtein_percentage()+basePlant.getProtein_percentage()*0.1,
-                basePlant.getLeaf_area_index()+basePlant.getLeaf_area_index()*0.1,
-                basePlant.getSeed_yield_per_area()+basePlant.getSeed_yield_per_area()*0.1);
+            modelTrainer trainer = new modelTrainer(model, manager);
+            trainer.train(dataset, 10);  // train for 10 epochs
 
+            // Save model to disk (you decide where)
+            model.save(Paths.get("models"), "plant-model");
 
-
-
-
-        Relations.rankingFunction(testPlant,new WeatherDay(
-                2024.5,        // year (e.g., mid-2024)
-                22.3,          // average temperature in °C
-                28.0,          // max temperature in °C
-                16.5,          // min temperature in °C
-                5.6,           // rainfall in mm
-                65.0,          // humidity in %
-                12.4,          // wind speed in km/h
-                18.7           // solar radiation in MJ/m²
-        ));
-
-        System.out.println("Final rating from temperature and humidty alone: "+ testPlant.getRanking());
-        //Table table = Table.create("Test Table");
-        //System.out.println(table.structure());
+            trainer.close();
+        }*/
     }
 }

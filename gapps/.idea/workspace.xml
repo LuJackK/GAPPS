@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7b8055a-cbde-48ed-ae83-62c9c51af909" name="Changes" comment="" />
+    <list default="true" id="b7b8055a-cbde-48ed-ae83-62c9c51af909" name="Changes" comment="First Commit, working on trained Ai model as a fitness evaluator function.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/plant/dataPrep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/plant/defaultModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/plant/modelTrainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/plant/plant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/playground/AItrainingLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/playground/SampleData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/playground/Playground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/playground/Playground.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,14 +33,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
-  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2xDPY26dx3i1ViUJqXPXtycRjmw" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,8 +52,6 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/beege/GAPPS/gapps&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -51,14 +61,6 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -69,8 +71,8 @@
       <updated>1747469716591</updated>
       <workItem from="1747469717855" duration="3225000" />
       <workItem from="1747480525814" duration="1282000" />
-      <workItem from="1747489049962" duration="10961000" />
-      <workItem from="1747489049962" duration="7298000" />
+      <workItem from="1747484380420" duration="3527000" />
+      <workItem from="1747488614934" duration="17848000" />
     </task>
     <servers />
   </component>
@@ -89,6 +91,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="First Commit, working on trained Ai model as a fitness evaluator function." />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit, working on trained Ai model as a fitness evaluator function." />
   </component>
 </project>

@@ -34,7 +34,7 @@
         <dependency>
             <groupId>ai.djl.pytorch</groupId>
             <artifactId>pytorch-engine</artifactId>
-            <version>0.25.0</version>
+            <version>0.31.1</version>
         </dependency>
     </dependencies>
 
