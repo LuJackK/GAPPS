@@ -27,7 +27,7 @@ public class avgCalculations {
         //double yearOneAvgSolarRadiation = 0;
 
         for (WeatherDay wd : weatherList) {
-            if(wd.getYear() == 2004){
+            if(wd.getYear() == 2004 || wd.getYear() == 2005 || wd.getYear() == 2006){
                 yearOneAvgTemp = yearOneAvgTemp + wd.getTemperature();
                 yearOneAvgMaxTemp = yearOneAvgMaxTemp + wd.getMaxTemp();
                 yearOneAvgMinTemp = yearOneAvgMinTemp + wd.getMinTemp();
@@ -54,7 +54,7 @@ public class avgCalculations {
         double yearLastAvgMinTemp = 0;
 
         for (WeatherDay wd : weatherList) {
-            if(wd.getYear() == 2019){
+            if(wd.getYear() == 2019 || wd.getYear() == 2016){
                 yearLastAvgTemp = yearLastAvgTemp + wd.getTemperature();
                 yearLastAvgMaxTemp = yearLastAvgMaxTemp + wd.getMaxTemp();
                 yearLastAvgMinTemp = yearLastAvgMinTemp + wd.getMinTemp();
@@ -90,9 +90,9 @@ public class avgCalculations {
         yearLastAvgSolarRadiation = yearLastAvgSolarRadiation/c;
 
 
-        double tempInc = (yearLastAvgTemp - yearOneAvgTemp )/15;
-        double maxTempInc = (yearLastAvgMaxTemp - yearOneAvgMaxTemp )/15;
-        double minTempInc = (yearLastAvgMinTemp - yearOneAvgMinTemp )/15;
+        double tempInc = (yearLastAvgTemp - yearOneAvgTemp )/12;
+        double maxTempInc = (yearLastAvgMaxTemp - yearOneAvgMaxTemp )/12;
+        double minTempInc = (yearLastAvgMinTemp - yearOneAvgMinTemp )/12;
         //double rainfallInc = (yearLastAvgRainfall - yearOneAvgRainfall )/15;
         //double windSpeedInc = (yearLastAvgWindSpeed - yearOneAvgWindSpeed )/15;
         //double humidityInc = (yearLastAvgHumidity - yearOneAvgHumidity )/15;
