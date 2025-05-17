@@ -1,7 +1,7 @@
 package playground;
 
 public class WeatherDay {
-    private int dayOfYear;
+    private double year;
     private double temperature;
     private double maxTemp;
     private double minTemp;
@@ -10,9 +10,9 @@ public class WeatherDay {
     private double windSpeed;
     private double solarRadiation;
 
-    public WeatherDay(int dayOfYear, double temperature, double maxTemp, double minTemp,
+    public WeatherDay(double year, double temperature, double maxTemp, double minTemp,
                        double rainfall, double humidity, double windSpeed, double solarRadiation) {
-        this.dayOfYear = dayOfYear;
+        this.year = year;
         this.temperature = temperature;
         this.maxTemp = maxTemp;
         this.minTemp = minTemp;
@@ -23,12 +23,12 @@ public class WeatherDay {
     }
 
     // Getters and setters
-    public int getDayOfYear() {
-        return dayOfYear;
+    public double getYear() {
+        return year;
     }
 
-    public void setDayOfYear(int dayOfYear) {
-        this.dayOfYear = dayOfYear;
+    public void setYear(int dayOfYear) {
+        this.year = dayOfYear;
     }
 
     public double getTemperature() {
@@ -90,7 +90,7 @@ public class WeatherDay {
     @Override
     public String toString() {
         return "WeatherData{" +
-                "dayOfYear=" + dayOfYear +
+                "dayOfYear=" + year +
                 ", temperature=" + temperature +
                 ", maxTemp=" + maxTemp +
                 ", minTemp=" + minTemp +
