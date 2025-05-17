@@ -793,6 +793,7 @@ public class Relations {
 
 
 
+        result=Math.min(Math.max(result,-20),20);
         plant.setRanking(result);
 
     }
