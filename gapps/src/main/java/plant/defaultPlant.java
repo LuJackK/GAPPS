@@ -3,12 +3,11 @@ package plant;
 import tech.tablesaw.api.Table;
 
 
-public class BasePlant extends plantRanges{
+public class defaultPlant extends plantRanges{
 
 
     //Table data= Table.read().csv("/Users/al/GAPPS/gapps/dataSets/Advanced Soybean Agricultural Dataset.csv");
     Table data= Table.read().csv("./dataSets/Advanced Soybean Agricultural Dataset.csv");
-
 
 
 
@@ -20,24 +19,28 @@ public class BasePlant extends plantRanges{
     private double chlorophyllA=data.numberColumn(7).mean(); //      <=Chloro A663 from table
     private double chlorophyllB=data.numberColumn(8).mean(); //      <=Chloro A649 from table
     private double protein_percentage=data.numberColumn(9).mean();
-    private double weight_300_seeds=data.numberColumn(10).mean();
     private double leaf_area_index=data.numberColumn(11).mean();
     private double seed_yield_per_area=data.numberColumn(12).mean();
 
 
-    public BasePlant() {
-        System.out.println("Hello");
-        System.out.println(plant_height);
-        System.out.println(number_of_pods);
-        System.out.println(biological_weight);
-        System.out.println(sugar);
-        System.out.println(relative_water);
-        System.out.println(chlorophyllA);
-        System.out.println(number_of_pods);
+    public defaultPlant() {
+        System.out.println("---------------------------------------------------------------");
+        System.out.println("Plant height AVG        : "+plant_height);
+        System.out.println("Number of pods AVG      : "+number_of_pods);
+        System.out.println("Bio weight of plant AVG : "+biological_weight);
+        System.out.println("Sugar percentage AVG    : "+sugar);
+        System.out.println("Relative water AVG      : "+relative_water);
+        System.out.println("ChrolophylA AVG         : "+chlorophyllA);
+        System.out.println("ChrolophylB AVG         : "+chlorophyllB);
+        System.out.println("Leaf area index AVG     : "+leaf_area_index);
+        System.out.println("Seed leave per area AVG : "+seed_yield_per_area);
         //.......
 
+        System.out.println("---------------------------------------------------------------");
 
-        System.out.println(data.structure());
+        System.out.println();
+        //System.out.println(data.structure());
+        //System.out.println();
     }
 
 
@@ -71,10 +74,6 @@ public class BasePlant extends plantRanges{
 
     public double getProtein_percentage() {
         return protein_percentage;
-    }
-
-    public double getWeight_300_seeds() {
-        return weight_300_seeds;
     }
 
     public double getLeaf_area_index() {
