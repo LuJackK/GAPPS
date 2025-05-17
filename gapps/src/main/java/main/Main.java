@@ -2,7 +2,6 @@ package main;
 import ai.djl.engine.Engine;
 import plant.defaultPlant;
 import ai.djl.engine.Engine;
-import plant.defaultPlant;
 import ai.djl.*;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
@@ -10,9 +9,7 @@ import ai.djl.*;
 public class Main {
     public static void main(String[] args) {
 
-        defaultPlant basePlant=new defaultPlant();
-
-
+        defaultPlant basePlant = new defaultPlant();
 
         System.out.println("DJL Engine: " + Engine.getInstance().getEngineName());
 
