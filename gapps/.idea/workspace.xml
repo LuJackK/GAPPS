@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7b8055a-cbde-48ed-ae83-62c9c51af909" name="Changes" comment="First Commit, working on trained Ai model as a fitness evaluator function.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/plant/dataPrep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/plant/defaultModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/plant/modelTrainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/plant/plant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/playground/AItrainingLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/playground/SampleData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b7b8055a-cbde-48ed-ae83-62c9c51af909" name="Changes" comment="First Commit, working on trained Ai model as a fitness evaluator function.&#10;Done by Luka Jack, laptop died, ty Aleksandra">
+      <change afterPath="$PROJECT_DIR$/src/main/java/plant/fitness.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/playground/Playground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/playground/Playground.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/plant/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/plant/Plant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/plant/defaultModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/plant/defaultModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/playground/WeatherDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/playground/WeatherDay.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,8 +68,26 @@
       <workItem from="1747469717855" duration="3225000" />
       <workItem from="1747480525814" duration="1282000" />
       <workItem from="1747484380420" duration="3527000" />
-      <workItem from="1747488614934" duration="17848000" />
+      <workItem from="1747488614934" duration="25656000" />
+      <workItem from="1747530046207" duration="2329000" />
     </task>
+    <task id="LOCAL-00001" summary="First Commit, working on trained Ai model as a fitness evaluator function.&#10;Done by Luka Jack, laptop died, ty Aleksandra">
+      <option name="closed" value="true" />
+      <created>1747520826811</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747520826811</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First Commit, working on trained Ai model as a fitness evaluator function.&#10;Done by Luka Jack, laptop died, ty Aleksandra">
+      <option name="closed" value="true" />
+      <created>1747521041320</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747521041320</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,6 +106,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit, working on trained Ai model as a fitness evaluator function." />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit, working on trained Ai model as a fitness evaluator function." />
+    <MESSAGE value="First Commit, working on trained Ai model as a fitness evaluator function.&#10;Done by Luka Jack, laptop died, ty Aleksandra" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit, working on trained Ai model as a fitness evaluator function.&#10;Done by Luka Jack, laptop died, ty Aleksandra" />
   </component>
 </project>

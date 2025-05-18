@@ -21,7 +21,6 @@ public class defaultModel {
         block.add(Linear.builder().setUnits(outputSize).build());
         this.model = Model.newInstance("plant-model");
         this.model.setBlock(block);
-
     }
     public Model getModel() {
         return this.model;

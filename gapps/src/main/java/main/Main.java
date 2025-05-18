@@ -3,15 +3,15 @@ package main;
 import ai.djl.Model;
 import ai.djl.ndarray.NDManager;
 import ai.djl.training.dataset.Dataset;
-import plant.dataPrep;
-import plant.defaultModel;
-import plant.modelTrainer;
+import plant.*;
 import playground.AItrainingLoader;
 import playground.SampleData;
 
 import java.nio.file.Paths;
 import java.util.List;
 import plant.defaultModel;
+import playground.WeatherDay;
+
 //package Main; izbacuje gresku pa sam komentirala
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -32,5 +32,9 @@ public class Main {
 
             trainer.close();
         }*/
+          Plant plant = new Plant(50, 20, 25, 3, 75, 1.5, 0.5, 20, 3, 0);
+          WeatherDay day = new WeatherDay(2019, 13,13,13,675,65,4,5000);
+          fitness fit = new fitness();
+          fit.evaluate(plant,day);
     }
 }

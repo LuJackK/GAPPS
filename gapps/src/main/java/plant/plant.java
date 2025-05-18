@@ -66,7 +66,19 @@ public class Plant {
     public void setRelative_water(double relative_water) {
         this.relative_water = relative_water;
     }
-
+    public double[] toFeatureArray(){
+        double[] data = new double[9];
+        data[0]=this.plant_height;
+        data[1]=this.number_of_pods;
+        data[2]=this.biological_weight;
+        data[3]=this.sugar;
+        data[4]=this.relative_water;
+        data[5]=this.chlorophyllA;
+        data[6]=this.chlorophyllB;
+        data[7]=this.protein_percentage;
+        data[8]=this.leaf_area_index;
+        return data;
+   }
     public double getChlorophyllA() {
         return chlorophyllA;
     }
