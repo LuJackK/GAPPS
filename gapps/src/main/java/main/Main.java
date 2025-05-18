@@ -57,7 +57,7 @@ public class Main {
         for (int i = 0; i < avg.size()  ; i++) {
             arrayOfBestTroughYears[i]=GeneticAlgorithm.testGeneration(initialPop,avg.get(i));
 
-            initialPop=GeneticAlgorithm.genCrossOver(arrayOfBestTroughYears[i],initialPopulationSize);
+            //initialPop=GeneticAlgorithm.genCrossOver(arrayOfBestTroughYears[i],initialPopulationSize);
 
             System.out.println("I am here: "+i);
         }

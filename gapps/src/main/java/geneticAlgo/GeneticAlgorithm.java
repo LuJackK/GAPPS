@@ -64,10 +64,6 @@ public class GeneticAlgorithm {
             System.out.println("Generation: "+i);
 
 
-            for (int j = 0; j < numOfChosenOnes; j++) {
-                bestOnes[j]=plantArray[j]; //get the first how ever many so we can do crossover with them
-            }
-
 
             plantArray=genCrossOver(bestOnes,plantArray.length);
 
@@ -99,9 +95,6 @@ public class GeneticAlgorithm {
         for (int i = 0; i < half-parents.length; i++) {
             returningArr[i+parents.length]=makePlant.randomPlant();
         }
-
-
-
 
 
 
