@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7b8055a-cbde-48ed-ae83-62c9c51af909" name="Changes" comment="Adjust genetic algorithm paramaters">
-      <change afterPath="$PROJECT_DIR$/dataSets/Sprite-0003.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/ResultsPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/VisualisationPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/guiClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/guiClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/geneticAlgo/GeneticAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/geneticAlgo/GeneticAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/plant/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/plant/Plant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/plant/plant.java" beforeDir="false" />
-    </list>
+    <list default="true" id="b7b8055a-cbde-48ed-ae83-62c9c51af909" name="Changes" comment="Adjust genetic algorithm paramaters" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
