@@ -7,13 +7,7 @@
     <list default="true" id="b7b8055a-cbde-48ed-ae83-62c9c51af909" name="Changes" comment="First Commit, working on trained Ai model as a fitness evaluator function.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/geneticAlgo/GeneticAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/geneticAlgo/GeneticAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/geneticAlgo/makePlant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/geneticAlgo/makePlant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mess/Relations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mess/Relations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/plant/DefaultPlant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/plant/DefaultPlant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/plant/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/plant/Plant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/plant/plant.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/playground/avgCalculations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/playground/avgCalculations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

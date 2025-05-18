@@ -14,7 +14,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws Exception {
 
-        int initialPopulationSize=200;
+        int initialPopulationSize=50;
 
         Plant[] initialPop=new Plant[initialPopulationSize];
 
@@ -37,7 +37,17 @@ public class Main {
         List<WeatherDay> avg = avgCalculations.calculateAvg(weatherList);
 
 
+        for (int i = 0; i < avg.size(); i++) {
+            System.out.println("-----------------------------------------");
+            System.out.println("Year: "+avg.get(i).getYear());
+            System.out.println("Temperature: "+avg.get(i).getTemperature());
+            System.out.println("MaxTemp: "+avg.get(i).getMaxTemp());
+            System.out.println("MinTemp: "+avg.get(i).getMinTemp());
+            System.out.println("Rainfall: "+avg.get(i).getRainfall());
+            System.out.println("Windspeed: "+avg.get(i).getWindSpeed());
+            System.out.println("solar: "+avg.get(i).getSolarRadiation());
 
+        }
 
                                                                     //THIS 10 NEEEDS TO BE GLOBAL VALUE
         Plant[][] arrayOfBestTroughYears=new Plant[avg.size()][10]; // 100 arrays of 10

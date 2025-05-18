@@ -33,8 +33,11 @@ public class GeneticAlgorithm {
 
                 Relations.rankingFunction(plantArray[j],year);
 
+
+
                 // Try inserting into bestOnes if better than the current lowest
                 double score = plantArray[j].getRanking();
+
 
                 // Find the lowest ranking plant in bestOnes
                 int minIndex = 0;
@@ -55,7 +58,7 @@ public class GeneticAlgorithm {
                 //plant .ranking
             }
 
-            //highest ranking is gona be first
+            //highest ranking eis gona be first
 
 
             System.out.println("Generation: "+i);
@@ -63,8 +66,8 @@ public class GeneticAlgorithm {
 
             for (int j = 0; j < numOfChosenOnes; j++) {
                 bestOnes[j]=plantArray[j]; //get the first how ever many so we can do crossover with them
-
             }
+
 
             plantArray=genCrossOver(bestOnes,plantArray.length);
 
