@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7b8055a-cbde-48ed-ae83-62c9c51af909" name="Changes" comment="Adjust genetic algorithm paramaters">
+    <list default="true" id="b7b8055a-cbde-48ed-ae83-62c9c51af909" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-
       <change beforePath="$PROJECT_DIR$/src/main/java/geneticAlgo/GeneticAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/geneticAlgo/GeneticAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/geneticAlgo/makePlant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/geneticAlgo/makePlant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mess/Relations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mess/Relations.java" afterDir="false" />
-
-      <change beforePath="$PROJECT_DIR$/src/main/java/plant/DefaultPlant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/plant/DefaultPlant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/plant/fitness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/plant/fitness.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/plant/plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/plant/plant.java" afterDir="false" />
-
-
-      <change beforePath="$PROJECT_DIR$/src/main/java/playground/avgCalculations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/playground/avgCalculations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/plant/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/plant/Plant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -128,11 +118,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit, working on trained Ai model as a fitness evaluator function." />
-
     <MESSAGE value="First Commit, working on trained Ai model as a fitness evaluator function.&#10;Done by Luka Jack, laptop died, ty Aleksandra" />
     <MESSAGE value="Added proper interfacing for AI based fitness function" />
     <MESSAGE value="Adjust genetic algorithm paramaters" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjust genetic algorithm paramaters" />
-
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
