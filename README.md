@@ -1,4 +1,4 @@
-Genetic Algorithm for Predicting Performance of Species and Recommends Most Favorable Phenotype - GAPPS for short 
+Genetic Algorithm for Predicting Performance of Species and Recommends Most Favorable Phenotype - GAPPS
 
 Presentation:
 https://docs.google.com/presentation/d/1tbMW8HXymeGzPZLv93VoS2fTtttJGmAqv4Ob7kYATPY/edit?slide=id.g3146cb5cc3e_0_43309#slide=id.g3146cb5cc3e_0_43309
