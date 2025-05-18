@@ -36,6 +36,7 @@
             <artifactId>pytorch-engine</artifactId>
             <version>0.31.1</version>
         </dependency>
+
     </dependencies>
 
 </project>

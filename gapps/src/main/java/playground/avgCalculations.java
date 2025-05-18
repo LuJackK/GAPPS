@@ -90,9 +90,9 @@ public class avgCalculations {
         yearLastAvgSolarRadiation = yearLastAvgSolarRadiation/c;
 
 
-        double tempInc = (yearLastAvgTemp - yearOneAvgTemp )/12;
-        double maxTempInc = (yearLastAvgMaxTemp - yearOneAvgMaxTemp )/12;
-        double minTempInc = (yearLastAvgMinTemp - yearOneAvgMinTemp )/12;
+        double tempInc = (yearLastAvgTemp - yearOneAvgTemp )/2;
+        double maxTempInc = (yearLastAvgMaxTemp - yearOneAvgMaxTemp )/2;
+        double minTempInc = (yearLastAvgMinTemp - yearOneAvgMinTemp )/2;
         //double rainfallInc = (yearLastAvgRainfall - yearOneAvgRainfall )/15;
         //double windSpeedInc = (yearLastAvgWindSpeed - yearOneAvgWindSpeed )/15;
         //double humidityInc = (yearLastAvgHumidity - yearOneAvgHumidity )/15;

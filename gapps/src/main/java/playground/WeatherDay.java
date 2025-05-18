@@ -86,6 +86,15 @@ public class WeatherDay {
     public void setSolarRadiation(double solarRadiation) {
         this.solarRadiation = solarRadiation;
     }
+    public double[] toFeatureArray(){
+        double[] data = new double[5];
+        data[0] = this.temperature;
+        data[1] = this.rainfall;
+        data[2] = this.windSpeed;
+        data[3] = this.humidity;
+        data[4] = this.solarRadiation;
+        return data;
+    }
 
     @Override
     public String toString() {

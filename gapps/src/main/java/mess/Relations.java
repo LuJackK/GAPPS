@@ -14,6 +14,7 @@ public class Relations {
 
         DefaultPlant def = new DefaultPlant();
 
+        int weight=100;
 
 
         //averages
@@ -33,10 +34,10 @@ public class Relations {
             //PlANT HEIGHT
             if (plant.getPlant_height() > def.getPlant_height()) {
                 //Tall plants handle heat worse
-                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             } else {
                 //Tall plants handle heat better
-                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             }
 
 
@@ -47,20 +48,20 @@ public class Relations {
             //BIOLOGICAL WEIGHT
             if (plant.getBiological_weight() > def.getBiological_weight()) {
                 //The bigger the biological weight the better for temperature resistance
-                result = result + (plant.getBiological_weight() - def.getBiological_weight())/ (def.MAX_biological_weight-def.getBiological_weight());
+                result = result + (plant.getBiological_weight() - def.getBiological_weight())/ (def.MAX_biological_weight-def.getBiological_weight())*weight;
             } else {
                 //The smaller the biological weight the better for temperature resistance
-                result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             }
 
 
             //SUGARS
             if (plant.getSugar() > def.getSugar()) {
                 //more sugar more resistent to temperature
-                result = result + (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar());
+                result = result + (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar())*weight;
             } else {
                 //The less sugar less plant is able to deal with temp
-                result = result + (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar());
+                result = result + (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar())*weight;
             }
 
 
@@ -69,10 +70,10 @@ public class Relations {
             //RELATIVE WATER
             if (plant.getRelative_water() > def.getRelative_water()) {
                 //Its better to have more relative water when its hot
-                result = result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
+                result = result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result =result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
+                result =result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water())*weight;
             }
 
 
@@ -80,39 +81,39 @@ public class Relations {
             //CHLOROPHYLA
             if (plant.getChlorophyllA() > def.getChlorophyllA()) {
                 //Its better to have more chlorophilA when its warm
-                result = result + (plant.getChlorophyllA() - def.getChlorophyllA())/ (def.MAX_chlorophyllA-def.getChlorophyllA());
+                result = result + (plant.getChlorophyllA() - def.getChlorophyllA())/ (def.MAX_chlorophyllA-def.getChlorophyllA())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result + (plant.getChlorophyllA() - def.getChlorophyllA())/ (def.MAX_chlorophyllA-def.getChlorophyllA());
+                result = result + (plant.getChlorophyllA() - def.getChlorophyllA())/ (def.MAX_chlorophyllA-def.getChlorophyllA())*weight;
             }
 
 
             //CHLOROPHYLB
             if (plant.getChlorophyllB() > def.getChlorophyllB()) {
                 //Its better to have more chlorophilB when its warm
-                result = result + (plant.getChlorophyllB() - def.getChlorophyllB())/ (def.MAX_chlorophyllB-def.getChlorophyllB());
+                result = result + (plant.getChlorophyllB() - def.getChlorophyllB())/ (def.MAX_chlorophyllB-def.getChlorophyllB())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result + (plant.getChlorophyllB() - def.getChlorophyllB())/ (def.MAX_chlorophyllB-def.getChlorophyllB());
+                result = result + (plant.getChlorophyllB() - def.getChlorophyllB())/ (def.MAX_chlorophyllB-def.getChlorophyllB())*weight;
             }
 
             //LEAF AREA
             if (plant.getLeaf_area_index() > def.getLeaf_area_index()) {
                 //Its better to have more chlorophilB when its warm
-                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
+                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
+                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index())*weight;
             }
 
 
             //GET SEED YIELD
             if (plant.getSeed_yield_per_area() > def.getSeed_yield_per_area()) {
                 //Sead YIeld is better to be low on high temps
-                result = result - (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
+                result = result - (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result - (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
+                result = result - (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area())*weight;
             }
 
 
@@ -124,10 +125,10 @@ public class Relations {
             //PlANT HEIGHT
             if (!(plant.getPlant_height() > def.getPlant_height())){
                 //Tall plants handle less heat better
-                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             } else {
                 //Tall plants handle heat better
-                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             }
 
             //NUMBER OF PODS
@@ -136,30 +137,30 @@ public class Relations {
             //BIOLOGICAL WEIGHT
             if (!(plant.getBiological_weight() > def.getBiological_weight())) {
                 //The bigger the biological weight the better for temperature resistance
-                result = result + (plant.getBiological_weight() - def.getBiological_weight())/ (def.MAX_biological_weight-def.getBiological_weight());
+                result = result + (plant.getBiological_weight() - def.getBiological_weight())/ (def.MAX_biological_weight-def.getBiological_weight())*weight;
             } else {
                 //The smaller the biological weight the better for temperature resistance
-                result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             }
 
 
             //SUGARS
             if (!(plant.getSugar() > def.getSugar())) {
                 //more sugar more resistent to temperature
-                result = result + (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar());
+                result = result + (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar())*weight;
             } else {
                 //The less sugar less plant is able to deal with temp
-                result = result + (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar());
+                result = result + (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar())*weight;
             }
 
 
             //RELATIVE WATER
             if (!(plant.getRelative_water() > def.getRelative_water())) {
                 //Its better to have more relative water when its hot
-                result = result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
+                result = result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result =result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
+                result =result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water())*weight;
             }
 
 
@@ -167,10 +168,10 @@ public class Relations {
             //CHLOROPHYLA
             if (!(plant.getChlorophyllA() > def.getChlorophyllA())) {
                 //Its better to have more chlorophilA when its warm
-                result = result + (plant.getChlorophyllA() - def.getChlorophyllA())/ (def.MAX_chlorophyllA-def.getChlorophyllA());
+                result = result + (plant.getChlorophyllA() - def.getChlorophyllA())/ (def.MAX_chlorophyllA-def.getChlorophyllA())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result + (plant.getChlorophyllA() - def.getChlorophyllA())/ (def.MAX_chlorophyllA-def.getChlorophyllA());
+                result = result + (plant.getChlorophyllA() - def.getChlorophyllA())/ (def.MAX_chlorophyllA-def.getChlorophyllA())*weight;
             }
 
 
@@ -178,10 +179,10 @@ public class Relations {
             //CHLOROPHYLB
             if (!(plant.getChlorophyllB() > def.getChlorophyllB())) {
                 //Its better to have more chlorophilB when its warm
-                result = result + (plant.getChlorophyllB() - def.getChlorophyllB())/ (def.MAX_chlorophyllB-def.getChlorophyllB());
+                result = result + (plant.getChlorophyllB() - def.getChlorophyllB())/ (def.MAX_chlorophyllB-def.getChlorophyllB())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result + (plant.getChlorophyllB() - def.getChlorophyllB())/ (def.MAX_chlorophyllB-def.getChlorophyllB());
+                result = result + (plant.getChlorophyllB() - def.getChlorophyllB())/ (def.MAX_chlorophyllB-def.getChlorophyllB())*weight;
             }
 
 
@@ -190,10 +191,10 @@ public class Relations {
             //LEAF AREA
             if (!(plant.getLeaf_area_index() > def.getLeaf_area_index())) {
                 //Its better to have more chlorophilB when its warm
-                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
+                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
+                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index())*weight;
             }
 
 
@@ -201,10 +202,10 @@ public class Relations {
             //GET SEED YIELD
             if (!(plant.getSeed_yield_per_area() > def.getSeed_yield_per_area())) {
                 //Sead YIeld is better to be low on high temps
-                result = result - (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
+                result = result - (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result - (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
+                result = result - (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area())*weight;
             }
 
         }
@@ -240,10 +241,10 @@ public class Relations {
             //PlANT HEIGHT
             if (plant.getPlant_height() > def.getPlant_height()) {
                 //Tall plants handle rain worse
-                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             } else {
                 //Tall plants handle rain better
-                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             }
 
 
@@ -251,20 +252,20 @@ public class Relations {
             //NUMBER OF PODS
             if (plant.getNumber_of_pods() > def.getNumber_of_pods()) {
                 //The bigger the number of pods better for rain resistance
-                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods());
+                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods())*weight;
             } else {
                 //The bigger the number of pods better for rain resistance
-                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods());
+                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods())*weight;
             }
 
 
             //BIOLOGICAL WEIGHT
             if (plant.getBiological_weight() > def.getBiological_weight()) {
                 //The bigger the biological weight the better for rainfall resistance
-                result = result + (plant.getBiological_weight() - def.getBiological_weight())/ (def.MAX_biological_weight-def.getBiological_weight());
+                result = result + (plant.getBiological_weight() - def.getBiological_weight())/ (def.MAX_biological_weight-def.getBiological_weight())*weight;
             } else {
                 //The smaller the biological weight the better for temperature resistance
-                result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             }
 
 
@@ -272,10 +273,10 @@ public class Relations {
             //SUGARS
             if (plant.getSugar() > def.getSugar()) {
                 //more suggar more suseptive to temperature
-                result = result - (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar());
+                result = result - (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar())*weight;
             } else {
                 //The less sugar less plant is able to deal with temp
-                result = result - (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar());
+                result = result - (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar())*weight;
             }
 
 
@@ -283,10 +284,10 @@ public class Relations {
             //RELATIVE WATER
             if (plant.getRelative_water() > def.getRelative_water()) {
                 //More relative water less you are ressistant to rainfall
-                result = result - (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
+                result = result - (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result =result - (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
+                result =result - (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water())*weight;
             }
 
 
@@ -295,10 +296,10 @@ public class Relations {
             //LEAF AREA
             if (plant.getLeaf_area_index() > def.getLeaf_area_index()) {
                 //Bigger leafe area better during rainfall cos it collects wata
-                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
+                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
+                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index())*weight;
             }
 
 
@@ -307,10 +308,10 @@ public class Relations {
             //GET SEED YIELD
             if (plant.getSeed_yield_per_area() > def.getSeed_yield_per_area()) {
                 //Sead Yield is bigger when there is more rain
-                result = result + (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
+                result = result + (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result + (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
+                result = result + (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area())*weight;
             }
 
 
@@ -324,10 +325,10 @@ public class Relations {
             //PlANT HEIGHT
             if (!(plant.getPlant_height() > def.getPlant_height())) {
                 //Tall plants handle rain worse
-                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             } else {
                 //Tall plants handle rain better
-                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             }
 
 
@@ -335,20 +336,20 @@ public class Relations {
             //NUMBER OF PODS
             if (!(plant.getNumber_of_pods() > def.getNumber_of_pods())) {
                 //The bigger the number of pods better for rain resistance
-                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods());
+                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods())*weight;
             } else {
                 //The bigger the number of pods better for rain resistance
-                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods());
+                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods())*weight;
             }
 
 
             //BIOLOGICAL WEIGHT
             if (!(plant.getBiological_weight() > def.getBiological_weight())) {
                 //The bigger the biological weight the better for rainfall resistance
-                result = result + (plant.getBiological_weight() - def.getBiological_weight())/ (def.MAX_biological_weight-def.getBiological_weight());
+                result = result + (plant.getBiological_weight() - def.getBiological_weight())/ (def.MAX_biological_weight-def.getBiological_weight())*weight;
             } else {
                 //The smaller the biological weight the better for temperature resistance
-                result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             }
 
 
@@ -357,10 +358,10 @@ public class Relations {
             //SUGARS
             if (!(plant.getSugar() > def.getSugar())) {
                 //more suggar more suseptive to temperature
-                result = result - (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar());
+                result = result - (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar())*weight;
             } else {
                 //The less sugar less plant is able to deal with temp
-                result = result - (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar());
+                result = result - (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar())*weight;
             }
 
 
@@ -370,10 +371,10 @@ public class Relations {
             //RELATIVE WATER
             if (!(plant.getRelative_water() > def.getRelative_water())) {
                 //More relative water less you are ressistant to rainfall
-                result = result - (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
+                result = result - (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result =result - (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
+                result =result - (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water())*weight;
             }
 
 
@@ -382,10 +383,10 @@ public class Relations {
             //LEAF AREA
             if (!(plant.getLeaf_area_index() > def.getLeaf_area_index())) {
                 //Bigger leafe area better during rainfall cos it collects wata
-                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
+                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
+                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index())*weight;
             }
 
 
@@ -393,10 +394,10 @@ public class Relations {
             //GET SEED YIELD
             if (!(plant.getSeed_yield_per_area() > def.getSeed_yield_per_area())) {
                 //Sead Yield is bigger when there is more rain
-                result = result + (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
+                result = result + (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result + (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
+                result = result + (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area())*weight;
             }
 
 
@@ -411,10 +412,10 @@ public class Relations {
             //PlANT HEIGHT
             if (plant.getPlant_height() > def.getPlant_height()) {
                 //Tall plants handle rain better
-                result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             } else {
                 //Tall plants handle rain better
-                result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             }
 
 
@@ -422,10 +423,10 @@ public class Relations {
             //NUMBER OF PODS
             if (plant.getNumber_of_pods() > def.getNumber_of_pods()) {
                 //The bigger the number of pods better for humidity
-                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods());
+                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods())*weight;
             } else {
                 //The bigger the number of pods better for rain resistance
-                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods());
+                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods())*weight;
             }
 
 
@@ -435,10 +436,10 @@ public class Relations {
             //SUGARS
             if (plant.getSugar() > def.getSugar()) {
                 //more sugar better you are addapted to humidity
-                result = result + (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar());
+                result = result + (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar())*weight;
             } else {
 
-                result = result + (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar());
+                result = result + (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar())*weight;
             }
 
 
@@ -447,10 +448,10 @@ public class Relations {
             //RELATIVE WATER
             if (plant.getRelative_water() > def.getRelative_water()) {
                 //Les relative water to humidity
-                result = result - (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
+                result = result - (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water())*weight;
             } else {
                 //Les relative water to humidity
-                result =result - (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
+                result =result - (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water())*weight;
             }
 
 
@@ -459,10 +460,10 @@ public class Relations {
             //LEAF AREA
             if (plant.getLeaf_area_index() > def.getLeaf_area_index()) {
                 //Bigger leafe area better transpiration and humidity
-                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
+                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
+                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index())*weight;
             }
 
 
@@ -471,10 +472,10 @@ public class Relations {
             //GET SEED YIELD
             if (plant.getSeed_yield_per_area() > def.getSeed_yield_per_area()) {
                 //Sead Yield is bigger when there is more humidity
-                result = result + (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
+                result = result + (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result + (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
+                result = result + (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area())*weight;
             }
 
         } else if (year.getHumidity()<ideal_humidity) {
@@ -482,10 +483,10 @@ public class Relations {
             //PlANT HEIGHT
             if (!(plant.getPlant_height() > def.getPlant_height())) {
                 //Tall plants handle rain better
-                result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             } else {
                 //Tall plants handle rain better
-                result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             }
 
 
@@ -493,10 +494,10 @@ public class Relations {
             //NUMBER OF PODS
             if (!(plant.getNumber_of_pods() > def.getNumber_of_pods())) {
                 //The bigger the number of pods better for humidity
-                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods());
+                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods())*weight;
             } else {
                 //The bigger the number of pods better for rain resistance
-                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods());
+                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods())*weight;
             }
 
 
@@ -506,10 +507,10 @@ public class Relations {
             //SUGARS
             if (!(plant.getSugar() > def.getSugar())) {
                 //more sugar better you are addapted to humidity
-                result = result + (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar());
+                result = result + (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar())*weight;
             } else {
 
-                result = result + (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar());
+                result = result + (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar())*weight;
             }
 
 
@@ -518,10 +519,10 @@ public class Relations {
             //RELATIVE WATER
             if (!(plant.getRelative_water() > def.getRelative_water())) {
                 //Les relative water to humidity
-                result = result - (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
+                result = result - (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water())*weight;
             } else {
                 //Les relative water to humidity
-                result =result - (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
+                result =result - (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water())*weight;
             }
 
 
@@ -530,10 +531,10 @@ public class Relations {
             //LEAF AREA
             if (!(plant.getLeaf_area_index() > def.getLeaf_area_index())) {
                 //Bigger leafe area better transpiration and humidity
-                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
+                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
+                result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index())*weight;
             }
 
 
@@ -541,10 +542,10 @@ public class Relations {
             //GET SEED YIELD
             if (!(plant.getSeed_yield_per_area() > def.getSeed_yield_per_area())) {
                 //Sead Yield is bigger when there is more humidity
-                result = result + (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
+                result = result + (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result + (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
+                result = result + (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area())*weight;
             }
         }
 
@@ -558,10 +559,10 @@ public class Relations {
             //PlANT HEIGHT
             if (plant.getPlant_height() > def.getPlant_height()) {
                 //Tall plants handle winds worse
-                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             } else {
                 //Tall plants handle heat better
-                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             }
 
 
@@ -569,19 +570,19 @@ public class Relations {
             //NUMBER OF PODS
             if ((plant.getNumber_of_pods() > def.getNumber_of_pods())) {
                 //The bigger the number of pods better for wind
-                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods());
+                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods())*weight;
             } else {
                 //The bigger the number of pods better for wind resistance
-                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods());
+                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods())*weight;
             }
 
             //BIOLOGICAL WEIGHT
             if (plant.getBiological_weight() > def.getBiological_weight()) {
                 //The bigger the biological weight the better for temperature resistance
-                result = result + (plant.getBiological_weight() - def.getBiological_weight())/ (def.MAX_biological_weight-def.getBiological_weight());
+                result = result + (plant.getBiological_weight() - def.getBiological_weight())/ (def.MAX_biological_weight-def.getBiological_weight())*weight;
             } else {
                 //The smaller the biological weight the better for temperature resistance
-                result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             }
 
 
@@ -590,10 +591,10 @@ public class Relations {
             //RELATIVE WATER
             if (plant.getRelative_water() > def.getRelative_water()) {
                 //Its better to have more relative water when its windy
-                result = result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
+                result = result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result =result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
+                result =result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water())*weight;
             }
 
 
@@ -602,10 +603,10 @@ public class Relations {
             //LEAF AREA
             if (plant.getLeaf_area_index() > def.getLeaf_area_index()) {
                 //Its better to have more chlorophilB when its warm
-                result = result - (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
+                result = result - (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result - (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
+                result = result - (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index())*weight;
             }
 
 
@@ -613,10 +614,10 @@ public class Relations {
             //GET SEED YIELD
             if (plant.getSeed_yield_per_area() > def.getSeed_yield_per_area()) {
                 //Sead YIeld is better to be low on high temps
-                result = result - (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
+                result = result - (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result - (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
+                result = result - (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area())*weight;
             }
 
 
@@ -628,10 +629,10 @@ public class Relations {
             //PlANT HEIGHT
             if (!(plant.getPlant_height() > def.getPlant_height())) {
                 //Tall plants handle winds worse
-                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             } else {
                 //Tall plants handle heat better
-                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             }
 
 
@@ -639,19 +640,19 @@ public class Relations {
             //NUMBER OF PODS
             if (!(plant.getNumber_of_pods() > def.getNumber_of_pods())) {
                 //The bigger the number of pods better for wind
-                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods());
+                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods())*weight;
             } else {
                 //The bigger the number of pods better for wind resistance
-                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods());
+                result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods())*weight;
             }
 
             //BIOLOGICAL WEIGHT
             if (!(plant.getBiological_weight() > def.getBiological_weight())) {
                 //The bigger the biological weight the better for temperature resistance
-                result = result + (plant.getBiological_weight() - def.getBiological_weight())/ (def.MAX_biological_weight-def.getBiological_weight());
+                result = result + (plant.getBiological_weight() - def.getBiological_weight())/ (def.MAX_biological_weight-def.getBiological_weight())*weight;
             } else {
                 //The smaller the biological weight the better for temperature resistance
-                result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             }
 
 
@@ -660,10 +661,10 @@ public class Relations {
             //RELATIVE WATER
             if (!(plant.getRelative_water() > def.getRelative_water())) {
                 //Its better to have more relative water when its windy
-                result = result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
+                result = result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result =result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
+                result =result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water())*weight;
             }
 
 
@@ -672,10 +673,10 @@ public class Relations {
             //LEAF AREA
             if (!(plant.getLeaf_area_index() > def.getLeaf_area_index())) {
                 //Its better to have more chlorophilB when its warm
-                result = result - (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
+                result = result - (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result - (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
+                result = result - (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index())*weight;
             }
 
 
@@ -683,10 +684,10 @@ public class Relations {
             //GET SEED YIELD
             if (!(plant.getSeed_yield_per_area() > def.getSeed_yield_per_area())) {
                 //Sead YIeld is better to be low on high temps
-                result = result - (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
+                result = result - (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result - (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
+                result = result - (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area())*weight;
             }
 
 
@@ -701,10 +702,10 @@ public class Relations {
             //PlANT HEIGHT
             if (plant.getPlant_height() > def.getPlant_height()) {
                 //Tall plants handle sun worse
-                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             } else {
                 //Tall plants handle sun better
-                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             }
 
 
@@ -715,10 +716,10 @@ public class Relations {
             //RELATIVE WATER
             if (plant.getRelative_water() > def.getRelative_water()) {
                 //Its better to have more relative water when its windy
-                result = result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
+                result = result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result =result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
+                result =result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water())*weight;
             }
 
 
@@ -727,10 +728,10 @@ public class Relations {
             //LEAF AREA
             if (plant.getLeaf_area_index() > def.getLeaf_area_index()) {
                 //Its better to have more chlorophilB when its warm
-                result = result - (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
+                result = result - (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result - (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
+                result = result - (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index())*weight;
             }
 
 
@@ -741,10 +742,10 @@ public class Relations {
             //PlANT HEIGHT
             if (!(plant.getPlant_height() > def.getPlant_height())) {
                 //Tall plants handle sun worse
-                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             } else {
                 //Tall plants handle sun better
-                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
+                result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height())*weight;
             }
 
 
@@ -755,10 +756,10 @@ public class Relations {
             //RELATIVE WATER
             if (!(plant.getRelative_water() > def.getRelative_water())) {
                 //Its better to have more relative water when its windy
-                result = result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
+                result = result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result =result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
+                result =result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water())*weight;
             }
 
 
@@ -767,10 +768,10 @@ public class Relations {
             //LEAF AREA
             if (!(plant.getLeaf_area_index() > def.getLeaf_area_index())) {
                 //Its better to have more chlorophilB when its warm
-                result = result - (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
+                result = result - (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index())*weight;
             } else {
                 //Less relative water when its hot less of a score
-                result = result - (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
+                result = result - (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index())*weight;
             }
 
 
@@ -779,8 +780,6 @@ public class Relations {
         }
 
 
-
-        result=Math.min(Math.max(result,-20),20);
         plant.setRanking(result);
 
     }
