@@ -66,6 +66,11 @@ public class GeneticAlgorithm {
 
             System.out.println("Generation: "+i);
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> ec578c34712d79c3c698ddaaaf8ef870ad1c5f34
             plantArray=genCrossOver(bestOnes,plantArray.length);
 
         }
@@ -96,9 +101,6 @@ public class GeneticAlgorithm {
         for (int i = 0; i < half-parents.length; i++) {
             returningArr[i+parents.length]=makePlant.randomPlant();
         }
-
-
-
 
 
 
