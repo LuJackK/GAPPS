@@ -1,9 +1,12 @@
 package geneticAlgo;
 
+import ai.djl.MalformedModelException;
 import mess.Relations;
 import plant.Plant;
+import plant.fitness;
 import playground.WeatherDay;
 
+import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -11,7 +14,7 @@ import java.util.Random;
 
 public class GeneticAlgorithm {
 
-    static public final int gensPerYear=5;
+    static public final int gensPerYear=30;
     static Random r=new Random();
 
     //need to discuss beginning population size ~1000
@@ -19,8 +22,8 @@ public class GeneticAlgorithm {
 
 
 
-    public static Plant[] testGeneration(Plant[] plantArray, WeatherDay year){
-
+    public static Plant[] testGeneration(Plant[] plantArray, WeatherDay year) throws MalformedModelException, IOException {
+        fitness fit = new fitness();
         Plant[] bestOnes=new Plant[numOfChosenOnes];
 
         for (int i = 0; i < numOfChosenOnes; i++) {
@@ -31,7 +34,7 @@ public class GeneticAlgorithm {
 
             for (int j = 0; j < plantArray.length; j++) {
 
-                Relations.rankingFunction(plantArray[j],year);
+                fit.evaluate(plantArray[j],year);
 
 
 
@@ -63,8 +66,11 @@ public class GeneticAlgorithm {
 
             System.out.println("Generation: "+i);
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> ec578c34712d79c3c698ddaaaf8ef870ad1c5f34
             plantArray=genCrossOver(bestOnes,plantArray.length);
 
         }

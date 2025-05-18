@@ -1,0 +1,31 @@
+Index: src/main/java/plant/Plant.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package plant;\r\n\r\npublic class Plant {\r\n    private double plant_height;\r\n    private double number_of_pods;\r\n    private double biological_weight;\r\n    private double sugar;\r\n    private double relative_water;\r\n    private double chlorophyllA; //      <=Chloro A663 from table\r\n    private double chlorophyllB; //      <=Chloro A649 from table\r\n    private double protein_percentage;\r\n    private double leaf_area_index;\r\n    private double seed_yield_per_area;\r\n\r\n    double ranking;\r\n\r\n    public Plant(double plant_height, double number_of_pods, double biological_weight, double sugar, double relative_water, double chlorophyllA, double chlorophyllB, double protein_percentage, double leaf_area_index, double seed_yield_per_area) {\r\n        this.plant_height = plant_height;\r\n        this.number_of_pods = number_of_pods;\r\n        this.biological_weight = biological_weight;\r\n        this.sugar = sugar;\r\n        this.relative_water = relative_water;\r\n        this.chlorophyllA = chlorophyllA;\r\n        this.chlorophyllB = chlorophyllB;\r\n        this.protein_percentage = protein_percentage;\r\n        this.leaf_area_index = leaf_area_index;\r\n        this.seed_yield_per_area = seed_yield_per_area;\r\n    }\r\n\r\n    public double getPlant_height() {\r\n        return plant_height;\r\n    }\r\n\r\n    public void setPlant_height(double plant_height) {\r\n        this.plant_height = plant_height;\r\n    }\r\n\r\n    public double getNumber_of_pods() {\r\n        return number_of_pods;\r\n    }\r\n\r\n    public void setNumber_of_pods(double number_of_pods) {\r\n        this.number_of_pods = number_of_pods;\r\n    }\r\n\r\n    public double getBiological_weight() {\r\n        return biological_weight;\r\n    }\r\n\r\n    public void setBiological_weight(double biological_weight) {\r\n        this.biological_weight = biological_weight;\r\n    }\r\n\r\n    public double getSugar() {\r\n        return sugar;\r\n    }\r\n\r\n    public void setSugar(double sugar) {\r\n        this.sugar = sugar;\r\n    }\r\n\r\n    public double getRelative_water() {\r\n        return relative_water;\r\n    }\r\n\r\n    public void setRelative_water(double relative_water) {\r\n        this.relative_water = relative_water;\r\n    }\r\n\r\n    public double getChlorophyllA() {\r\n        return chlorophyllA;\r\n    }\r\n\r\n    public void setChlorophyllA(double chlorophyllA) {\r\n        this.chlorophyllA = chlorophyllA;\r\n    }\r\n\r\n    public double getChlorophyllB() {\r\n        return chlorophyllB;\r\n    }\r\n\r\n    public void setChlorophyllB(double chlorophyllB) {\r\n        this.chlorophyllB = chlorophyllB;\r\n    }\r\n\r\n    public double getProtein_percentage() {\r\n        return protein_percentage;\r\n    }\r\n\r\n    public void setProtein_percentage(double protein_percentage) {\r\n        this.protein_percentage = protein_percentage;\r\n    }\r\n\r\n    public double getLeaf_area_index() {\r\n        return leaf_area_index;\r\n    }\r\n\r\n    public void setLeaf_area_index(double leaf_area_index) {\r\n        this.leaf_area_index = leaf_area_index;\r\n    }\r\n\r\n    public double getSeed_yield_per_area() {\r\n        return seed_yield_per_area;\r\n    }\r\n\r\n    public void setSeed_yield_per_area(double seed_yield_per_area) {\r\n        this.seed_yield_per_area = seed_yield_per_area;\r\n    }\r\n\r\n    public double getRanking() {\r\n        return ranking;\r\n    }\r\n\r\n    public void setRanking(double ranking) {\r\n        this.ranking = ranking;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/plant/Plant.java b/src/main/java/plant/Plant.java
+--- a/src/main/java/plant/Plant.java	(revision 1e5378f8c647e69af2519f9f496388c113b8cfa6)
++++ b/src/main/java/plant/Plant.java	(date 1747532845464)
+@@ -66,7 +66,19 @@
+     public void setRelative_water(double relative_water) {
+         this.relative_water = relative_water;
+     }
+-
++    public double[] toFeatureArray(){
++        double[] data = new double[9];
++        data[0]=this.plant_height;
++        data[1]=this.number_of_pods;
++        data[2]=this.biological_weight;
++        data[3]=this.sugar;
++        data[4]=this.relative_water;
++        data[5]=this.chlorophyllA;
++        data[6]=this.chlorophyllB;
++        data[7]=this.protein_percentage;
++        data[8]=this.leaf_area_index;
++        return data;
++   }
+     public double getChlorophyllA() {
+         return chlorophyllA;
+     }

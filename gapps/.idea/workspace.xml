@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7b8055a-cbde-48ed-ae83-62c9c51af909" name="Changes" comment="First Commit, working on trained Ai model as a fitness evaluator function.">
+    <list default="true" id="b7b8055a-cbde-48ed-ae83-62c9c51af909" name="Changes" comment="Adjust genetic algorithm paramaters">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/src/main/java/geneticAlgo/GeneticAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/geneticAlgo/GeneticAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/geneticAlgo/makePlant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/geneticAlgo/makePlant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mess/Relations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mess/Relations.java" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/src/main/java/plant/DefaultPlant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/plant/DefaultPlant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/plant/fitness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/plant/fitness.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/plant/plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/plant/plant.java" afterDir="false" />
+
+
       <change beforePath="$PROJECT_DIR$/src/main/java/playground/avgCalculations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/playground/avgCalculations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,22 +47,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/al/GAPPS/gapps/src/main/java/org/example/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Merging main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/al/GAPPS/gapps/src/main/java/org/example/Main.java",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,8 +74,42 @@
       <workItem from="1747469717855" duration="3225000" />
       <workItem from="1747480525814" duration="1282000" />
       <workItem from="1747484380420" duration="3527000" />
-      <workItem from="1747488614934" duration="17848000" />
+      <workItem from="1747488614934" duration="25656000" />
+      <workItem from="1747530046207" duration="6266000" />
     </task>
+    <task id="LOCAL-00001" summary="First Commit, working on trained Ai model as a fitness evaluator function.&#10;Done by Luka Jack, laptop died, ty Aleksandra">
+      <option name="closed" value="true" />
+      <created>1747520826811</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747520826811</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First Commit, working on trained Ai model as a fitness evaluator function.&#10;Done by Luka Jack, laptop died, ty Aleksandra">
+      <option name="closed" value="true" />
+      <created>1747521041320</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747521041320</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added proper interfacing for AI based fitness function">
+      <option name="closed" value="true" />
+      <created>1747532806714</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747532806714</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added proper interfacing for AI based fitness function">
+      <option name="closed" value="true" />
+      <created>1747532927607</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747532927607</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,6 +128,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit, working on trained Ai model as a fitness evaluator function." />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit, working on trained Ai model as a fitness evaluator function." />
+
+    <MESSAGE value="First Commit, working on trained Ai model as a fitness evaluator function.&#10;Done by Luka Jack, laptop died, ty Aleksandra" />
+    <MESSAGE value="Added proper interfacing for AI based fitness function" />
+    <MESSAGE value="Adjust genetic algorithm paramaters" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjust genetic algorithm paramaters" />
+
   </component>
 </project>
