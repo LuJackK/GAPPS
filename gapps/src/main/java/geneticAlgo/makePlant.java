@@ -7,10 +7,15 @@ import java.util.Random;
 
 
 public class makePlant {
-    public static Random rand = new Random();
+    private static Random rand = new Random();
+    private static final DefaultPlant def = new DefaultPlant();
+
+
+
+
 
     public static Plant randomPlant() {
-        DefaultPlant def=new DefaultPlant();
+
         return new Plant(
                 randomBetween(def.MIN_plant_height, def.MAX_plant_height),
                 randomBetween(def.MIN_number_of_pods, def.MAX_number_of_pods),

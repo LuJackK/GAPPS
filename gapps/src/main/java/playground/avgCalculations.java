@@ -107,7 +107,7 @@ public class avgCalculations {
 
         Random random = new Random();
 
-        for(int i = 0; i < 100; i++){
+        for(int i = 0; i < 30; i++){
             yearLastAvgTemp = yearLastAvgTemp + tempInc;
             yearLastAvgMaxTemp = yearLastAvgMaxTemp + maxTempInc;
             yearLastAvgMinTemp = yearLastAvgMinTemp + minTempInc;

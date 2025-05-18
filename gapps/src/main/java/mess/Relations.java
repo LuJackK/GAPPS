@@ -39,7 +39,7 @@ public class Relations {
                 result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
             //NUMBER OF PODS
 
@@ -53,7 +53,6 @@ public class Relations {
                 result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
             }
 
-            System.out.println("Result right now: "+ result);
 
             //SUGARS
             if (plant.getSugar() > def.getSugar()) {
@@ -64,7 +63,7 @@ public class Relations {
                 result = result + (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
 
             //RELATIVE WATER
@@ -76,7 +75,7 @@ public class Relations {
                 result =result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
             //CHLOROPHYLA
             if (plant.getChlorophyllA() > def.getChlorophyllA()) {
@@ -87,7 +86,6 @@ public class Relations {
                 result = result + (plant.getChlorophyllA() - def.getChlorophyllA())/ (def.MAX_chlorophyllA-def.getChlorophyllA());
             }
 
-            System.out.println("Result right now: "+ result);
 
             //CHLOROPHYLB
             if (plant.getChlorophyllB() > def.getChlorophyllB()) {
@@ -98,9 +96,6 @@ public class Relations {
                 result = result + (plant.getChlorophyllB() - def.getChlorophyllB())/ (def.MAX_chlorophyllB-def.getChlorophyllB());
             }
 
-            System.out.println("Result right now: "+ result);
-            //PROTEIN
-
             //LEAF AREA
             if (plant.getLeaf_area_index() > def.getLeaf_area_index()) {
                 //Its better to have more chlorophilB when its warm
@@ -110,7 +105,6 @@ public class Relations {
                 result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
             }
 
-            System.out.println("Result right now: "+ result);
 
             //GET SEED YIELD
             if (plant.getSeed_yield_per_area() > def.getSeed_yield_per_area()) {
@@ -120,8 +114,6 @@ public class Relations {
                 //Less relative water when its hot less of a score
                 result = result - (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
             }
-
-            System.out.println("Result right now: "+ result);
 
 
 
@@ -138,7 +130,6 @@ public class Relations {
                 result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
             }
 
-            System.out.println("Result right now: "+ result);
             //NUMBER OF PODS
 
 
@@ -151,7 +142,6 @@ public class Relations {
                 result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
             }
 
-            System.out.println("Result right now: "+ result);
 
             //SUGARS
             if (!(plant.getSugar() > def.getSugar())) {
@@ -162,7 +152,6 @@ public class Relations {
                 result = result + (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar());
             }
 
-            System.out.println("Result right now: "+ result);
 
             //RELATIVE WATER
             if (!(plant.getRelative_water() > def.getRelative_water())) {
@@ -174,7 +163,6 @@ public class Relations {
             }
 
 
-            System.out.println("Result right now: "+ result);
 
             //CHLOROPHYLA
             if (!(plant.getChlorophyllA() > def.getChlorophyllA())) {
@@ -186,7 +174,6 @@ public class Relations {
             }
 
 
-            System.out.println("Result right now: "+ result);
 
             //CHLOROPHYLB
             if (!(plant.getChlorophyllB() > def.getChlorophyllB())) {
@@ -197,7 +184,7 @@ public class Relations {
                 result = result + (plant.getChlorophyllB() - def.getChlorophyllB())/ (def.MAX_chlorophyllB-def.getChlorophyllB());
             }
 
-            System.out.println("Result right now: "+ result);
+
             //PROTEIN
 
             //LEAF AREA
@@ -209,7 +196,7 @@ public class Relations {
                 result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
             //GET SEED YIELD
             if (!(plant.getSeed_yield_per_area() > def.getSeed_yield_per_area())) {
@@ -220,7 +207,6 @@ public class Relations {
                 result = result - (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
             }
 
-            System.out.println("Result right now: "+ result);
         }
 
 
@@ -245,7 +231,7 @@ public class Relations {
 
         }
 
-        System.out.println("-----------------------------------------------------------------------------");
+
 
 
         //RAINFALL
@@ -260,7 +246,7 @@ public class Relations {
                 result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
             //NUMBER OF PODS
             if (plant.getNumber_of_pods() > def.getNumber_of_pods()) {
@@ -281,7 +267,7 @@ public class Relations {
                 result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
             //SUGARS
             if (plant.getSugar() > def.getSugar()) {
@@ -292,7 +278,6 @@ public class Relations {
                 result = result - (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar());
             }
 
-            System.out.println("Result right now: "+ result);
 
 
             //RELATIVE WATER
@@ -304,7 +289,7 @@ public class Relations {
                 result =result - (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
 
             //LEAF AREA
@@ -316,7 +301,8 @@ public class Relations {
                 result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
             }
 
-            System.out.println("Result right now: "+ result);
+
+
 
             //GET SEED YIELD
             if (plant.getSeed_yield_per_area() > def.getSeed_yield_per_area()) {
@@ -327,7 +313,7 @@ public class Relations {
                 result = result + (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
 
 
@@ -344,7 +330,7 @@ public class Relations {
                 result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
             //NUMBER OF PODS
             if (!(plant.getNumber_of_pods() > def.getNumber_of_pods())) {
@@ -365,7 +351,8 @@ public class Relations {
                 result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
             }
 
-            System.out.println("Result right now: "+ result);
+
+
 
             //SUGARS
             if (!(plant.getSugar() > def.getSugar())) {
@@ -376,7 +363,8 @@ public class Relations {
                 result = result - (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar());
             }
 
-            System.out.println("Result right now: "+ result);
+
+
 
 
             //RELATIVE WATER
@@ -388,7 +376,7 @@ public class Relations {
                 result =result - (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
 
             //LEAF AREA
@@ -400,7 +388,7 @@ public class Relations {
                 result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
             //GET SEED YIELD
             if (!(plant.getSeed_yield_per_area() > def.getSeed_yield_per_area())) {
@@ -411,7 +399,7 @@ public class Relations {
                 result = result + (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
         }
 
@@ -429,7 +417,7 @@ public class Relations {
                 result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
             //NUMBER OF PODS
             if (plant.getNumber_of_pods() > def.getNumber_of_pods()) {
@@ -440,7 +428,7 @@ public class Relations {
                 result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
 
 
@@ -453,7 +441,7 @@ public class Relations {
                 result = result + (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
 
             //RELATIVE WATER
@@ -465,7 +453,7 @@ public class Relations {
                 result =result - (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
 
             //LEAF AREA
@@ -477,7 +465,7 @@ public class Relations {
                 result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
 
             //GET SEED YIELD
@@ -500,7 +488,7 @@ public class Relations {
                 result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
             //NUMBER OF PODS
             if (!(plant.getNumber_of_pods() > def.getNumber_of_pods())) {
@@ -511,7 +499,7 @@ public class Relations {
                 result = result + (plant.getNumber_of_pods() - def.getNumber_of_pods())/ (def.MAX_number_of_pods-def.getNumber_of_pods());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
 
 
@@ -524,7 +512,7 @@ public class Relations {
                 result = result + (plant.getSugar() - def.getSugar())/ (def.MAX_sugar-def.getSugar());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
 
             //RELATIVE WATER
@@ -536,7 +524,7 @@ public class Relations {
                 result =result - (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
 
             //LEAF AREA
@@ -548,7 +536,6 @@ public class Relations {
                 result = result + (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
             }
 
-            System.out.println("Result right now: "+ result);
 
 
             //GET SEED YIELD
@@ -577,7 +564,7 @@ public class Relations {
                 result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
             //NUMBER OF PODS
             if ((plant.getNumber_of_pods() > def.getNumber_of_pods())) {
@@ -597,7 +584,7 @@ public class Relations {
                 result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
 
             //RELATIVE WATER
@@ -609,7 +596,7 @@ public class Relations {
                 result =result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
 
             //LEAF AREA
@@ -621,7 +608,7 @@ public class Relations {
                 result = result - (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
             //GET SEED YIELD
             if (plant.getSeed_yield_per_area() > def.getSeed_yield_per_area()) {
@@ -632,7 +619,7 @@ public class Relations {
                 result = result - (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
 
 
@@ -647,7 +634,7 @@ public class Relations {
                 result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
             //NUMBER OF PODS
             if (!(plant.getNumber_of_pods() > def.getNumber_of_pods())) {
@@ -667,7 +654,7 @@ public class Relations {
                 result = result + (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
 
             //RELATIVE WATER
@@ -679,7 +666,7 @@ public class Relations {
                 result =result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
 
             //LEAF AREA
@@ -691,7 +678,7 @@ public class Relations {
                 result = result - (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
             //GET SEED YIELD
             if (!(plant.getSeed_yield_per_area() > def.getSeed_yield_per_area())) {
@@ -702,7 +689,7 @@ public class Relations {
                 result = result - (plant.getSeed_yield_per_area() - def.getSeed_yield_per_area())/ (def.MAX_seed_yield_per_area-def.getSeed_yield_per_area());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
         }
 
@@ -720,7 +707,7 @@ public class Relations {
                 result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
 
 
@@ -734,7 +721,7 @@ public class Relations {
                 result =result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
 
             //LEAF AREA
@@ -746,7 +733,7 @@ public class Relations {
                 result = result - (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
         } else if (year.getSolarRadiation()<ideal_solarRadiation) {
 
@@ -760,7 +747,7 @@ public class Relations {
                 result = result - (plant.getPlant_height() - def.getPlant_height())/ (def.MAX_plant_height-def.getPlant_height());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
 
 
@@ -774,7 +761,7 @@ public class Relations {
                 result =result + (plant.getRelative_water() - def.getRelative_water())/ (def.MAX_relative_water-def.getRelative_water());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
 
             //LEAF AREA
@@ -786,7 +773,7 @@ public class Relations {
                 result = result - (plant.getLeaf_area_index() - def.getLeaf_area_index())/ (def.MAX_leaf_area_index-def.getLeaf_area_index());
             }
 
-            System.out.println("Result right now: "+ result);
+
 
 
         }
