@@ -4,35 +4,76 @@ import javax.swing.*;
 import java.awt.*;
 
 public class guiClass extends JPanel {
-    private JButton btn1;
-    private JButton btn2;
-    private JButton btn3;
-    private JLabel gifLabel;
+    private JTextField populationInput;
+    private JTextField generationInput;
+    private JButton goButton;
 
-    public guiClass(String gifPath) {
+    public guiClass() {
         setLayout(new BorderLayout());
+        setBackground(Color.BLACK);
 
-        // Buttons panel
-        JPanel buttonPanel = new JPanel();
-        btn1 = new JButton("Button 1");
-        btn2 = new JButton("Button 2");
-        btn3 = new JButton("Button 3");
-        buttonPanel.add(btn1);
-        buttonPanel.add(btn2);
-        buttonPanel.add(btn3);
+        // Header
+        JLabel heading = new JLabel("GAPPS", SwingConstants.CENTER);
+        heading.setFont(new Font("SansSerif", Font.BOLD, 48));
+        heading.setForeground(Color.WHITE);
+        heading.setBorder(BorderFactory.createEmptyBorder(40, 0, 20, 0));
+        add(heading, BorderLayout.NORTH);
 
-        // GIF panel
-        JPanel gifPanel = new JPanel();
-        gifPanel.setBackground(Color.BLACK);
-        ImageIcon gifIcon = new ImageIcon(gifPath);
-        gifLabel = new JLabel(gifIcon);
-        gifPanel.add(gifLabel);
+        // Center form panel
+        JPanel formPanel = new JPanel();
+        formPanel.setLayout(new GridBagLayout());
+        formPanel.setBackground(Color.BLACK);
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.insets = new Insets(10, 10, 10, 10);
+        gbc.fill = GridBagConstraints.HORIZONTAL;
 
-        add(buttonPanel, BorderLayout.NORTH);
-        add(gifPanel, BorderLayout.CENTER);
+        JLabel populationLabel = new JLabel("Population Size:");
+        populationLabel.setForeground(Color.WHITE);
+        populationInput = new JTextField(10);
+        populationInput.setBackground(Color.DARK_GRAY);
+        populationInput.setForeground(Color.WHITE);
+        populationInput.setCaretColor(Color.WHITE);
+
+        JLabel generationLabel = new JLabel("Generation Cycles Per Year:");
+        generationLabel.setForeground(Color.WHITE);
+        generationInput = new JTextField(10);
+        generationInput.setBackground(Color.DARK_GRAY);
+        generationInput.setForeground(Color.WHITE);
+        generationInput.setCaretColor(Color.WHITE);
+
+        goButton = new JButton("Go");
+        goButton.setBackground(Color.DARK_GRAY);
+        goButton.setForeground(Color.BLACK);
+
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        formPanel.add(populationLabel, gbc);
+        gbc.gridx = 1;
+        formPanel.add(populationInput, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 1;
+        formPanel.add(generationLabel, gbc);
+        gbc.gridx = 1;
+        formPanel.add(generationInput, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = 2;
+        gbc.gridwidth = 2;
+        formPanel.add(goButton, gbc);
+
+        add(formPanel, BorderLayout.CENTER);
     }
 
-    public JButton getBtn1() { return btn1; }
-    public JButton getBtn2() { return btn2; }
-    public JButton getBtn3() { return btn3; }
+    public JButton getGoButton() {
+        return goButton;
+    }
+
+    public int getPopulationSize() {
+        return Integer.parseInt(populationInput.getText());
+    }
+
+    public int getGenerationCyclesPerYear() {
+        return Integer.parseInt(generationInput.getText());
+    }
 }

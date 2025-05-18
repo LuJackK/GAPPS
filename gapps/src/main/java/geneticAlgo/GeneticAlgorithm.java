@@ -14,13 +14,15 @@ import java.util.Random;
 
 public class GeneticAlgorithm {
 
-    static public final int gensPerYear=30;
+    static public int gensPerYear;
     static Random r=new Random();
 
     //need to discuss beginning population size ~1000
     static public final int numOfChosenOnes=10;
 
-
+    public static void setGensPerYear(int gensPerYear) {
+        GeneticAlgorithm.gensPerYear = gensPerYear;
+    }
 
     public static Plant[] testGeneration(Plant[] plantArray, WeatherDay year) throws MalformedModelException, IOException {
         fitness fit = new fitness();
