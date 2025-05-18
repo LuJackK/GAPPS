@@ -43,7 +43,7 @@ public class fitness {
             NDList outputList = block.forward(new ParameterStore(manager, false), inputList, false);
             NDArray output = outputList.singletonOrThrow();
             float result = output.getFloat(); // final prediction
-            System.out.println("Prediction: " + result);
+            plant.setRanking(result);
 
         }
     }

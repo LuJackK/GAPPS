@@ -69,25 +69,7 @@ public class DefaultPlant {
 
 
 
-    public DefaultPlant() {
-        System.out.println("---------------------------------------------------------------");
-        System.out.println("Plant height AVG        : "+plant_height);
-        System.out.println("Number of pods AVG      : "+number_of_pods);
-        System.out.println("Bio weight of plant AVG : "+biological_weight);
-        System.out.println("Sugar percentage AVG    : "+sugar);
-        System.out.println("Relative water AVG      : "+relative_water);
-        System.out.println("ChrolophylA AVG         : "+chlorophyllA);
-        System.out.println("ChrolophylB AVG         : "+chlorophyllB);
-        System.out.println("Leaf area index AVG     : "+leaf_area_index);
-        System.out.println("Seed leave per area AVG : "+seed_yield_per_area);
-        //.......
-
-        System.out.println("---------------------------------------------------------------");
-
-        System.out.println();
-        //System.out.println(data.structure());
-        //System.out.println();
-    }
+    public DefaultPlant() {}
 
 
     public double getPlant_height() {

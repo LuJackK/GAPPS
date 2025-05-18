@@ -1,129 +1,122 @@
 package plant;
 
 public class Plant {
-    private double plant_height;
-    private double number_of_pods;
-    private double biological_weight;
-    private double sugar;
-    private double relative_water;
-    private double chlorophyllA; //      <=Chloro A663 from table
-    private double chlorophyllB; //      <=Chloro A649 from table
-    private double protein_percentage;
-    private double leaf_area_index;
-    private double seed_yield_per_area;
 
-    double ranking;
+        private double plant_height;
+        private double number_of_pods;
+        private double biological_weight;
+        private double sugar;
+        private double relative_water;
+        private double chlorophyllA; //      <=Chloro A663 from table
+        private double chlorophyllB; //      <=Chloro A649 from table
+        private double protein_percentage;
+        private double leaf_area_index;
+        private double seed_yield_per_area;
 
-    public Plant(double plant_height, double number_of_pods, double biological_weight, double sugar, double relative_water, double chlorophyllA, double chlorophyllB, double protein_percentage, double leaf_area_index, double seed_yield_per_area) {
-        this.plant_height = plant_height;
-        this.number_of_pods = number_of_pods;
-        this.biological_weight = biological_weight;
-        this.sugar = sugar;
-        this.relative_water = relative_water;
-        this.chlorophyllA = chlorophyllA;
-        this.chlorophyllB = chlorophyllB;
-        this.protein_percentage = protein_percentage;
-        this.leaf_area_index = leaf_area_index;
-        this.seed_yield_per_area = seed_yield_per_area;
-    }
+        double ranking;
 
-    public double getPlant_height() {
-        return plant_height;
-    }
+        public Plant(double plant_height, double number_of_pods, double biological_weight, double sugar, double relative_water, double chlorophyllA, double chlorophyllB, double protein_percentage, double leaf_area_index, double seed_yield_per_area) {
+            this.plant_height = plant_height;
+            this.number_of_pods = number_of_pods;
+            this.biological_weight = biological_weight;
+            this.sugar = sugar;
+            this.relative_water = relative_water;
+            this.chlorophyllA = chlorophyllA;
+            this.chlorophyllB = chlorophyllB;
+            this.protein_percentage = protein_percentage;
+            this.leaf_area_index = leaf_area_index;
+            this.seed_yield_per_area = seed_yield_per_area;
+        }
 
-    public void setPlant_height(double plant_height) {
-        this.plant_height = plant_height;
-    }
+        public double getPlant_height() {
+            return plant_height;
+        }
 
-    public double getNumber_of_pods() {
-        return number_of_pods;
-    }
+        public void setPlant_height(double plant_height) {
+            this.plant_height = plant_height;
+        }
 
-    public void setNumber_of_pods(double number_of_pods) {
-        this.number_of_pods = number_of_pods;
-    }
+        public double getNumber_of_pods() {
+            return number_of_pods;
+        }
 
-    public double getBiological_weight() {
-        return biological_weight;
-    }
+        public void setNumber_of_pods(double number_of_pods) {
+            this.number_of_pods = number_of_pods;
+        }
 
-    public void setBiological_weight(double biological_weight) {
-        this.biological_weight = biological_weight;
-    }
+        public double getBiological_weight() {
+            return biological_weight;
+        }
 
-    public double getSugar() {
-        return sugar;
-    }
+        public void setBiological_weight(double biological_weight) {
+            this.biological_weight = biological_weight;
+        }
 
-    public void setSugar(double sugar) {
-        this.sugar = sugar;
-    }
+        public double getSugar() {
+            return sugar;
+        }
 
-    public double getRelative_water() {
-        return relative_water;
-    }
+        public void setSugar(double sugar) {
+            this.sugar = sugar;
+        }
 
-    public void setRelative_water(double relative_water) {
-        this.relative_water = relative_water;
-    }
-    public double[] toFeatureArray(){
-        double[] data = new double[9];
-        data[0]=this.plant_height;
-        data[1]=this.number_of_pods;
-        data[2]=this.biological_weight;
-        data[3]=this.sugar;
-        data[4]=this.relative_water;
-        data[5]=this.chlorophyllA;
-        data[6]=this.chlorophyllB;
-        data[7]=this.protein_percentage;
-        data[8]=this.leaf_area_index;
-        return data;
-   }
-    public double getChlorophyllA() {
-        return chlorophyllA;
-    }
+        public double getRelative_water() {
+            return relative_water;
+        }
 
-    public void setChlorophyllA(double chlorophyllA) {
-        this.chlorophyllA = chlorophyllA;
-    }
+        public void setRelative_water(double relative_water) {
+            this.relative_water = relative_water;
+        }
 
-    public double getChlorophyllB() {
-        return chlorophyllB;
-    }
+        public double getChlorophyllA() {
+            return chlorophyllA;
+        }
 
-    public void setChlorophyllB(double chlorophyllB) {
-        this.chlorophyllB = chlorophyllB;
-    }
+        public void setChlorophyllA(double chlorophyllA) {
+            this.chlorophyllA = chlorophyllA;
+        }
 
-    public double getProtein_percentage() {
-        return protein_percentage;
-    }
+        public double getChlorophyllB() {
+            return chlorophyllB;
+        }
 
-    public void setProtein_percentage(double protein_percentage) {
-        this.protein_percentage = protein_percentage;
-    }
+        public void setChlorophyllB(double chlorophyllB) {
+            this.chlorophyllB = chlorophyllB;
+        }
 
-    public double getLeaf_area_index() {
-        return leaf_area_index;
-    }
+        public double getProtein_percentage() {
+            return protein_percentage;
+        }
 
-    public void setLeaf_area_index(double leaf_area_index) {
-        this.leaf_area_index = leaf_area_index;
-    }
+        public void setProtein_percentage(double protein_percentage) {
+            this.protein_percentage = protein_percentage;
+        }
 
-    public double getSeed_yield_per_area() {
-        return seed_yield_per_area;
-    }
+        public double getLeaf_area_index() {
+            return leaf_area_index;
+        }
 
-    public void setSeed_yield_per_area(double seed_yield_per_area) {
-        this.seed_yield_per_area = seed_yield_per_area;
-    }
+        public void setLeaf_area_index(double leaf_area_index) {
+            this.leaf_area_index = leaf_area_index;
+        }
 
-    public double getRanking() {
-        return ranking;
-    }
+        public double getSeed_yield_per_area() {
+            return seed_yield_per_area;
+        }
 
-    public void setRanking(double ranking) {
-        this.ranking = ranking;
-    }
+        public void setSeed_yield_per_area(double seed_yield_per_area) {
+            this.seed_yield_per_area = seed_yield_per_area;
+        }
+
+        public double getRanking() {
+            return ranking;
+        }
+
+        public void setRanking(double ranking) {
+            this.ranking = ranking;
+        }
+        public double[] toFeatureArray(){
+            double[] data = {this.plant_height, this.number_of_pods, this.biological_weight, this.sugar, this.relative_water, this.chlorophyllA, this.chlorophyllB, this.protein_percentage, this.leaf_area_index };
+            return data;
+        }
 }
